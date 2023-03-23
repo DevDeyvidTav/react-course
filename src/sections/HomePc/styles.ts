@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div `
     width: 100%;
-    height: 100vh;
+    max-height: 700px;
     padding-top: 8rem;
-   
+    @media (max-width: 767px) {
+    display: none;
+  };
 `
 export const Content = styled.div `
     font-weight: 300;
@@ -28,19 +30,22 @@ export const TextArea = styled.div `
     height: 100%;
     text-decoration: none;
     color: white;
-    padding: 15px
 `
+
+
+
 export const Button = styled.button `
     width: auto;
-    padding: 10px 20px ;
+    padding: 10px 100px ;
     background-color: #01316E;
     font-size: 25px;
     font-weight: 700;
     color: white;
-    margin-top: 40px;
+    margin-top: 120px;
     border-radius: 7px;
     :hover{
         background-color: #13357E ;
         transition: 0.5s
     }
 `
+

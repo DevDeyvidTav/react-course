@@ -5,6 +5,11 @@ export const Container = styled.div `
     position: fixed;
     width: 100%;
     height: 5rem;
+    @media (max-width: 767px){
+        display: none;
+    };
+    background-color: #001735;
+    z-index: 4;
 `
 export const Content = styled.div `
     display: flex;
@@ -14,6 +19,7 @@ export const Content = styled.div `
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+    background: none;
 `
 export const NavItem = styled.a `
     width: auto;
@@ -23,11 +29,15 @@ export const NavItem = styled.a `
 `
 export const BlueSpan = styled.span `
     color: #01316E;
+    background: none;
 
 `
 export const Logo = styled.h1 `
     font-size: 25px;
     font-weight: 700;
     width: auto;
+    padding: 5px;
+    border-radius: 8px;
+    background: none;
 `
 

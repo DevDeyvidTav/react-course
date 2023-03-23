@@ -26,6 +26,7 @@ export function Home_PC() {
                  blurhash="L74Va|L}xap1I~k=RiW9O1xZj^oK"/>
                 </TextArea>
             </Content>
+
         </Container>
     )
 }
