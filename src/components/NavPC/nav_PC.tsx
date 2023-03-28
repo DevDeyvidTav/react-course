@@ -22,9 +22,6 @@ export function NavPC(){
              <NavItem href="#">
                 Planos
              </NavItem>
-             <NavItem href="#">
-                Avaliações
-             </NavItem>
            </Content>
         </Container>
     )

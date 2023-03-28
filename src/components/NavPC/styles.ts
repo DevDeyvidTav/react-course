@@ -8,7 +8,7 @@ export const Container = styled.div `
     @media (max-width: 767px){
         display: none;
     };
-    background-color: #001735;
+    background-color: black;
     z-index: 4;
 `
 export const Content = styled.div `

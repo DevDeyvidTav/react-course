@@ -9,7 +9,6 @@ export const Container = styled.div `
     background-image: url('/whybuy.png');
     background-repeat: no-repeat;
     background-size: cover;
-
 `
 export const ResultsGrid = styled.div `
     display: flex;
