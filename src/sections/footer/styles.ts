@@ -14,7 +14,7 @@ export const FooterContainer = styled.div `
     background-color: #202020;
     color: white;
     @media (max-width: 768px) {
-        margin-top: 100vh ;
+        margin-top: 140vh ;
         padding: 20px; 
         display: flex;
         gap: 30px;
