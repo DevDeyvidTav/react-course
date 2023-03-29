@@ -1,13 +1,20 @@
 import { Button, Container, TextArea, Title } from "./styles";
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
+
 
 export function HomeMobile() {
+    useEffect(() => {
+        Aos.init({ duration: 400, easing: "ease-out" })
+      })
     return (
         <Container>
-            <Title>
+            <Title data-aos="fade-up">
                 Aprenda a programar do zero ao profissional, e
                 conquiste sua vaga no mercado de trabalho!
             </Title>
-            <TextArea>
+            <TextArea data-aos="fade-up">
                 <p
                     style={{ background: 'none', fontSize: '15px', textAlign: 'start' }}
                 >
@@ -17,7 +24,7 @@ export function HomeMobile() {
                     programação foi criado para atender às suas necessidades e ajudá-lo a alcançar seus objetivos.
                 </p>
             </TextArea>
-            <Button>
+            <Button data-aos="fade-up">
                 Inscreva-se
             </Button>
         </Container>

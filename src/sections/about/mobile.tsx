@@ -1,10 +1,17 @@
 import { TextAreaComponent } from "../../components/Typography/styles";
 import { Mob_Container, ResultGrid } from "./styles";
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 export function About_Mob(){
+    useEffect(() => {
+        Aos.init({ duration: 400, easing: "ease-out" })
+      })
     return(
         <Mob_Container>
             <TextAreaComponent
+            data-aos="fade-up"
                 textColor="#01316E"
                 width="auto"
                 type="title"
@@ -13,6 +20,7 @@ export function About_Mob(){
             </TextAreaComponent>
             
                 <TextAreaComponent
+                data-aos="fade-up"
                     width="90%"
                     margin="20px auto"
                     type="text"
@@ -22,8 +30,10 @@ export function About_Mob(){
                     O resultado desse trabalho foi um curso completo e abrangente, que oferece aos alunos conhecimentos teóricos e práticos sobre programação, desde os conceitos básicos até as tecnologias mais avançadas. Além disso, o curso conta com atividades práticas e projetos reais para que os alunos possam aplicar os conhecimentos adquiridos e desenvolver suas habilidades.
                     A equipe responsável pelo desenvolvimento do curso é composta por profissionais altamente capacitados e experientes na área de programação e tecnologia da informação. Todo o conteúdo foi cuidadosamente elaborado para garantir a qualidade e eficácia do ensino, e está sujeito a direitos autorais.
                 </TextAreaComponent>
-                <ResultGrid>
+                <ResultGrid
+                data-aos="fade-up">
                     <TextAreaComponent 
+                    data-aos="fade-up"
                         textAlign="center"
                         type="title" 
                         textColor="#707070"
@@ -31,6 +41,7 @@ export function About_Mob(){
                             100 empresas parceiras
                         </TextAreaComponent>
                         <TextAreaComponent
+                        data-aos="fade-up"
                          type="text"
                          textAlign="center"
                          width="100%"

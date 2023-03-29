@@ -31,9 +31,7 @@ interface ContainerProps {
 export const Container = styled.div <ContainerProps>`
     width: 100vw;
     height: ${ContainerProps => ContainerProps.height};
-    max-height: 800px;
-    background-color: ${ContainerProps => ContainerProps.backgroundColor};
-    
+    background-color: ${ContainerProps => ContainerProps.backgroundColor};    
 `
 interface ContentProps {
     height: string

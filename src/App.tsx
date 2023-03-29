@@ -2,6 +2,7 @@ import { NavMobile } from './components/NavMobile/NavMobile'
 import { NavPC } from './components/NavPC/nav_PC'
 import { About } from './sections/about/About'
 import { About_Mob } from './sections/about/mobile'
+import { Footer } from './sections/footer/Footer'
 import { Home_PC } from './sections/HomePc/Home_PC'
 import { HomeMobile } from './sections/Home_mobile/HomeMobile'
 import { Metodology } from './sections/metodology/Metodology'
@@ -15,7 +16,8 @@ export function App() {
     style={
       {
         maxWidth: "100%",
-        width: "100vw"
+        width: "100vw",
+        overflow: "hidden"
       }
     }
     className="App">
@@ -29,6 +31,7 @@ export function App() {
       <About/>
       <About_Mob/>
       <Planes/>
+      <Footer/>
     </div>
   )
 }

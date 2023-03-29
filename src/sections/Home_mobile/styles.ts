@@ -37,6 +37,7 @@ export const Title = styled.h2`
   text-align: start;
   position: relative;
   z-index: 1; 
+  margin-top: 100px
 `;
 export const Button = styled.button`
     width: 86vw;

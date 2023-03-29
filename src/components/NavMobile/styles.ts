@@ -14,7 +14,7 @@ export const Container = styled.div `
     z-index: 2;
 `
 export const Content = styled.div `
-    color:white;
+    color: white;
     display: flex;
     width: 500px;
     margin: 0 auto 0 auto;
@@ -23,4 +23,7 @@ export const Content = styled.div `
     justify-content: space-between;
     gap: 24px;
     background: none;
+    @media (max-width: 600px) {
+        width: 360px;
+    }
 `
