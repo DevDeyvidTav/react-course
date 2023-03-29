@@ -4,7 +4,7 @@ export const Container = styled.div `
     width: 100%;
     max-height: 700px;
     padding-top: 8rem;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
     display: none;
   };
 `

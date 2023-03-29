@@ -4,7 +4,7 @@ export const content = styled.div `
     max-width: 1140px;
     height: 80%;
     margin: 0 auto;
-    
+
 
 `
 export const GridPlane = styled.div`
@@ -13,6 +13,7 @@ export const GridPlane = styled.div`
     background-color: #202020;
     border-radius: 30px;
     padding: 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2) ;
 `
 export const PlaneText = styled.div`
     width: auto;

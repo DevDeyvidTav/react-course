@@ -26,16 +26,13 @@ export function Metodology() {
                     uma comunidade engajada de alunos.
                 </TextAreaComponent>
                 <HabilitiesPainel>
-                    <AiFillHtml5 style={{ color: "white", height: "80px" }} />
+                    <AiFillHtml5 style={{ color: "white", height: "80px", background: "none"}} />
                     <DiCss3 style={{ color: "white", height: "80px" }} />
                     <IoLogoJavascript style={{ color: "white", height: "80px" }} />
                     <SiNextdotjs style={{ color: "white", height: "80px" }} />
                     <SiTypescript style={{ color: "white", height: "80px" }} />
-                    <DiNodejs style={{ color: "white", height: "80px" }} />
-                    <SiPrisma style={{ color: "white", height: "80px" }} />
-                    <SiPostgresql style={{ color: "white", height: "80px" }} />
+                    <DiNodejs style={{ color: "white", height: "80px" }} />''
                     <DiReact style={{ color: "white", height: "80px" }} />
-                    <AiFillHtml5 style={{ color: "white", height: "80px" }} />
                 </HabilitiesPainel>
             </Content>
         </Container>

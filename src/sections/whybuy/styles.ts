@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     max-height: 900px;
@@ -9,8 +9,12 @@ export const Container = styled.div `
     background-image: url('/whybuy.png');
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 768px) {
+        max-height: none;
+        height: 1300px
+    }
 `
-export const ResultsGrid = styled.div `
+export const ResultsGrid = styled.div`
     display: flex;
     max-width: 1140px;
     height: 12rem;
@@ -20,9 +24,33 @@ export const ResultsGrid = styled.div `
     border-top: 20px solid #202020;
     border-bottom: 20px solid #202020;
     z-index: 1;
+    @media (max-width:768px) {
+        max-width: 400px;
+        height: 10rem;
+        left: 1px;
+        right: 1px;
+        position: absolute;
+        top: 105vh;
+        
+    }
     
 `
-export const Results = styled.div `
+interface TextProps {
+    fontWeight: string;
+    fontSize: string;
+}
+
+export const Text = styled.div <TextProps> `
+    font-size: ${TextProps => TextProps.fontSize};
+    width: auto;
+    background: none;
+    font-weight: ${TextProps => TextProps.fontWeight};
+    @media (max-width: 758px) {
+        font-size: 35px;
+    }
+
+`
+export const Results = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,24 +61,57 @@ export const Results = styled.div `
     background: none;
     color: white;
 `
-export const Content = styled.div `
+export const Content = styled.div`
     max-width: 1140px;
     height: 550px;
     margin: 120px auto 0 auto;
     background: none;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: start
+    }
 `
-export const TextArea = styled.div `
+export const TextArea = styled.div`
     width: 33%;
     height: 100%;
     background: none;
+    @media (max-width: 768px) {
+        width: 90vw;
+        margin: 150px auto 30px auto;
+    }
 `
-export const CourseDetails = styled.div `
+export const CourseDetails = styled.div`
     width: 66%;
     height: 100%;
     background: none;
     display: flex;
     flex-direction: column;
-    gap:50px
+    gap:50px;
+    @media (max-width: 768px) {
+        width: 90%;
+        gap: 200px
+    }
+`
+export const Div = styled.div`
+    display: flex;
+    width: 100%; 
+    height: 10rem;
+    background: none;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+`
+export const DetailsText = styled.div `
+    background: none;
+    display: flex;
+    width: 48%;
+    gap: 10px;
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
 `

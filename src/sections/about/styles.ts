@@ -5,7 +5,9 @@ export const Container = styled.div `
     height: 110vh;
     max-height: 800px;
     background-color: white;
-
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 export const Content = styled.div `
     max-width: 1140px;
@@ -29,8 +31,23 @@ export const ResultGrid = styled.div `
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07) ;
     border: 3px solid #01316E;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 
-
+export const Mob_Container = styled.div `
+    width: 100vw;
+    height: 120vh;
+    background-color: white;
+    @media (min-width: 769px) {
+        display: none
+    }
+`
 

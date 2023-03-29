@@ -1,6 +1,7 @@
 import { NavMobile } from './components/NavMobile/NavMobile'
 import { NavPC } from './components/NavPC/nav_PC'
 import { About } from './sections/about/About'
+import { About_Mob } from './sections/about/mobile'
 import { Home_PC } from './sections/HomePc/Home_PC'
 import { HomeMobile } from './sections/Home_mobile/HomeMobile'
 import { Metodology } from './sections/metodology/Metodology'
@@ -10,7 +11,14 @@ import GlobalStyles from './styles/GlobalStyles'
 
 export function App() {
   return (
-    <div className="App">
+    <div
+    style={
+      {
+        maxWidth: "100%",
+        width: "100vw"
+      }
+    }
+    className="App">
       <GlobalStyles/>
       <NavPC />
       <NavMobile/>
@@ -19,6 +27,7 @@ export function App() {
       <WhyBuy/>
       <Metodology/>
       <About/>
+      <About_Mob/>
       <Planes/>
     </div>
   )

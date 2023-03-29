@@ -1,4 +1,4 @@
-import { Container, Content, CourseDetails, Results, ResultsGrid, TextArea } from "./styles";
+import { Container, Content, CourseDetails, DetailsText, Div, Results, ResultsGrid, Text, TextArea } from "./styles";
 import { AiOutlineFileDone, AiOutlineSolution } from "react-icons/ai"
 import { MdLiveTv, MdPeopleAlt } from "react-icons/md"
 
@@ -7,29 +7,29 @@ export function WhyBuy() {
         <Container>
             <ResultsGrid>
                 <Results>
-                    <p style={{ background: "none", textAlign: "center", fontSize: "50px", fontWeight: "900" }}>
-                        30 mil
-                    </p>
+                    <Text fontSize="50px" fontWeight="900">
+                        +30mil
+                    </Text>
                     <p style={{ background: "none", textAlign: "center" }}>
                         alunos formados
                     </p>
                 </Results>
                 <Results>
-                    <p style={{ background: "none", textAlign: "center", fontSize: "50px", fontWeight: "900" }}>
+                    <Text fontSize="50px" fontWeight="900">
                         91%
-                    </p>
+                    </Text>
                     <p style={{ background: "none", textAlign: "center" }}>
                         dos nossos alunos estão empregados
                     </p>
                 </Results>
-                <div style={{ color: "white" ,background: "none", display: "flex", flexDirection: "column", maxWidth: "380px", justifyContent: "center", alignItems: "center" }}>
-                    <p style={{ background: "none", textAlign: "center", fontSize: "50px", fontWeight: "900" }}>
+                <Results>
+                    <Text fontSize="50px" fontWeight="900">
                         35%
-                    </p>
+                    </Text>
                     <p style={{ background: "none", textAlign: "center" }}>
                         são seniors e plenos
                     </p>
-                </div>
+                </Results>
             </ResultsGrid>
             <Content>
                 <TextArea>
@@ -40,36 +40,34 @@ export function WhyBuy() {
                     </p>
                 </TextArea>
                 <CourseDetails>
-                    <div
-                        style={{ display: "flex", width: '100%', height: '10rem', background: "none", justifyContent: "space-between" }}>
-                        <div style={{ background: "none", display: "flex", width: "48%", gap: "10px" }}>
+                    <Div>
+                        <DetailsText >
                             <AiOutlineFileDone style={{ color: "white", background: "none", width: "100%", height: "50%", }} />
                             <p style={{ background: "none", fontSize: "18px", fontWeight: "700", color: "white" }}>
                                 Você terá acesso a um conteúdo completo sobre os fundamentos e sobre as principais técnicas e ferramentas da área.
                             </p>
-                        </div>
-                        <div style={{ background: "none", display: "flex", width: "48%", gap: "10px" }}>
+                        </DetailsText>
+                        <DetailsText >
                             < MdLiveTv style={{ color: "white", background: "none", width: "100%", height: "50%", }} />
                             <p style={{ background: "none", fontSize: "18px", fontWeight: "700", color: "white" }}>
                                 Também terá momentos ao vivo com professores especialistas do mercado, em que poderá tirar dúvidas e evoluir nos cases práticos.
                             </p>
-                        </div>
-                    </div>
-                    <div
-                        style={{ display: "flex", width: '100%', height: '10rem', background: "none", justifyContent: "space-between" }}>
-                        <div style={{ background: "none", display: "flex", width: "48%", gap: "10px" }}>
+                        </DetailsText>
+                    </Div>
+                    <Div>
+                        <DetailsText >
                             <AiOutlineSolution style={{ color: "white", background: "none", width: "100%", height: "50%", }} />
                             <p style={{ background: "none", fontSize: "18px", fontWeight: "700", color: "white" }}>
                                 Ao longo de todo o curso, mentores de carreira irão te acompanhar e dar dicas de como conquistar de forma rápida uma vaga na área.
                             </p>
-                        </div>
-                        <div style={{ background: "none", display: "flex", width: "48%", gap: "10px" }}>
+                        </DetailsText>
+                        <DetailsText>
                             <MdPeopleAlt style={{ color: "white", background: "none", width: "100%", height: "50%", }} />
                             <p style={{ background: "none", fontSize: "18px", fontWeight: "700", color: "white" }}>
                                 Você terá acesso vitalício à comunidade StudyDev, onde poderá se conectar com pessoas de diferentes áreas e construir um networking sólido.
                             </p>
-                        </div>
-                    </div>
+                        </DetailsText>
+                    </Div>
                 </CourseDetails>
             </Content>
         </Container>

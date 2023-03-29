@@ -33,22 +33,31 @@ export const Container = styled.div <ContainerProps>`
     height: ${ContainerProps => ContainerProps.height};
     max-height: 800px;
     background-color: ${ContainerProps => ContainerProps.backgroundColor};
+    
 `
 interface ContentProps {
     height: string
     display?: string 
     justifyContent?: string
     alignItems?: string
-    gap: string
+    gap?: string
 }
 
 export const Content = styled.div <ContentProps>`
-    width: 100vw;
+    max-width: 1140px;
+    margin: 40px auto;
     height: ${ContentProps => ContentProps.height};
     max-height: 800px;
-    display: ${ContentProps => ContentProps.display};
-    justify-content: ${ContentProps => ContentProps.justifyContent};
+    display: flex;
+    justify-content: space-between;
     align-items: ${ContentProps => ContentProps.alignItems};
     gap: ${ContentProps => ContentProps.gap};
-    background-color: white;
+    background: none;
+    @media (max-width: 758px) {
+        flex-direction: column;
+        height: 1180px;
+        align-items: center;
+        gap: 20px;
+        
+    }
 `

@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/home-img.png');
   background-size: cover;
   background-position: center;
-  @media (min-width: 767px){
+  @media (min-width: 769px){
         display: none;
   }
 `;
