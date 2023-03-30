@@ -12,6 +12,7 @@ export function Planes() {
       })
     return (
         <Container
+            id="planes"
             backgroundColor="#efeded"
             height="100vh"
 

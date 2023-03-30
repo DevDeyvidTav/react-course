@@ -10,7 +10,8 @@ export function WhyBuy() {
         Aos.init({ duration: 400, easing: "ease-out" })
       })
     return (
-        <Container>
+        <Container
+        id="whybuy">
             <ResultsGrid data-aos="fade-up">
                 <Results>
                     <Text fontSize="50px" fontWeight="900">

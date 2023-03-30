@@ -9,7 +9,7 @@ export function About_Mob(){
         Aos.init({ duration: 400, easing: "ease-out" })
       })
     return(
-        <Mob_Container>
+        <Mob_Container id="aboutmob">
             <TextAreaComponent
             data-aos="fade-up"
                 textColor="#01316E"

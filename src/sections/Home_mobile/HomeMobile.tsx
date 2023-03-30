@@ -1,13 +1,19 @@
 import { Button, Container, TextArea, Title } from "./styles";
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Aos from "aos"
 import 'aos/dist/aos.css'
+import { RegistrationModal } from "../../components/modal";
 
 
 export function HomeMobile() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     useEffect(() => {
         Aos.init({ duration: 400, easing: "ease-out" })
       })
+      
+    const handleModalOpen = () => {
+        setIsModalOpen(true);
+      };
     return (
         <Container>
             <Title data-aos="fade-up">
@@ -24,9 +30,15 @@ export function HomeMobile() {
                     programação foi criado para atender às suas necessidades e ajudá-lo a alcançar seus objetivos.
                 </p>
             </TextArea>
-            <Button data-aos="fade-up">
+            <Button 
+             onClick={handleModalOpen}
+            data-aos="fade-up">
                 Inscreva-se
             </Button>
+            <RegistrationModal 
+            isOpen={isModalOpen} 
+            onClose={() => setIsModalOpen(false)}/>
+            
         </Container>
     )
 }

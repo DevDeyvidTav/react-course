@@ -13,7 +13,7 @@ export function Metodology() {
         Aos.init({ duration: 400, easing: "ease-out" })
       })
     return (
-        <Container>
+        <Container id="metodology">
             <Content>
                 <TextAreaComponent
                     data-aos="fade-up"

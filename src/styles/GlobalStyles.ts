@@ -8,6 +8,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         max-width: 100%;
+        scroll-behavior: smooth;
     }
    html, body, #root {
         height: 100%;

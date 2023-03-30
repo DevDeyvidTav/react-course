@@ -1,5 +1,6 @@
 import { NavMobile } from './components/NavMobile/NavMobile'
 import { NavPC } from './components/NavPC/nav_PC'
+import { WhatssAppButton } from './components/whatsapp-button'
 import { About } from './sections/about/About'
 import { About_Mob } from './sections/about/mobile'
 import { Footer } from './sections/footer/Footer'
@@ -22,6 +23,7 @@ export function App() {
     }
     className="App">
       <GlobalStyles/>
+      <WhatssAppButton/>
       <NavPC />
       <NavMobile/>
       <Home_PC/>

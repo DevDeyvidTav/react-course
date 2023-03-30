@@ -3,7 +3,7 @@ import { Container, Content, ResultGrid } from "./styles";
 
 export function About() {
     return (
-        <Container>
+        <Container id="about">
             <TextAreaComponent
                 padding="60px 0 40px 0"
                 textColor="#01316E"
