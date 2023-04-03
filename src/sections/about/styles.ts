@@ -44,7 +44,7 @@ export const ResultGrid = styled.div `
 
 export const Mob_Container = styled.div `
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     background-color: white;
     @media (min-width: 769px) {
         display: none

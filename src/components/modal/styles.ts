@@ -5,15 +5,22 @@ interface ModalWrapperProps {
     isOpen: boolean;
 }
  export const StyledPhoneInput = styled(InputMask)`
+ 
     color: white;
     border: none;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 2px solid #e3e3e3;
     font-size: 16px;
     padding: 10px;
     width: 100%;
 
-  &:focus {
+
+    &:focus {
     outline: none;
+    border-bottom: 2px solid #0077ff;
+  }
+  &::placeholder{
+    color: #999;
+    font-size: 0.9rem;
   }
 `;
 const pulse = keyframes`

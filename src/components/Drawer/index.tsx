@@ -100,7 +100,7 @@ export const Drawer = ({ isOpen, onClose }: any) => {
                                 Metodologia
                             </a>
                             <a  onClick={onClose}
-                                href="/#aboutmob">
+                                href="/#aboutmob dev">
                                 Sobre nós
                             </a>
                             <a  onClick={onClose}

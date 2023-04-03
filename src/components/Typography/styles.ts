@@ -26,12 +26,14 @@ interface ContainerProps {
     height: string
     backgroundUrl?: string
     backgroundColor?: string
+    maxHeight?: string 
 }
 
 export const Container = styled.div <ContainerProps>`
     width: 100vw;
     height: ${ContainerProps => ContainerProps.height};
-    background-color: ${ContainerProps => ContainerProps.backgroundColor};    
+    background-color: ${ContainerProps => ContainerProps.backgroundColor};  
+    max-height: ${ContainerProps => ContainerProps.maxHeight} ;
 `
 interface ContentProps {
     height: string

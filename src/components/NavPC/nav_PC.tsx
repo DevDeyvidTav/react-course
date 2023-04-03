@@ -10,16 +10,16 @@ export function NavPC(){
                 <BlueSpan>DEV</BlueSpan>
                 </Logo>
              </NavItem>
-             <NavItem href="#">
+             <NavItem href="#whybuy">
                 Por quê me inscrever?
              </NavItem>
-             <NavItem href="#">
+             <NavItem href="#metodology">
                 Metodologia
              </NavItem>
-             <NavItem href="#">
+             <NavItem href="#about">
                 Sobre
              </NavItem>
-             <NavItem href="#">
+             <NavItem href="#planes">
                 Planos
              </NavItem>
            </Content>

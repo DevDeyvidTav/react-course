@@ -4,7 +4,7 @@ import { AnimatedButton } from "./style";
 
 export function WhatssAppButton(){
     return(
-        <AnimatedButton>
+        <AnimatedButton target="_blank" href="https://wa.me/5581997210434">
             <MdWhatsapp 
             style={{
                 background: "none",

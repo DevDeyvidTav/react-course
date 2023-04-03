@@ -15,6 +15,7 @@ export function Planes() {
             id="planes"
             backgroundColor="#efeded"
             height="100vh"
+            maxHeight="800px"
 
         >
             <TextAreaComponent
@@ -22,7 +23,7 @@ export function Planes() {
                 width="1140px"
                 textColor="#01316E"
                 type="title"
-                padding="80px 0 0 0"
+                padding="20px 0 0 0"
                 margin="0 auto 40px auto ">
                 Confira nossos planos
             </TextAreaComponent>

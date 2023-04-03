@@ -14,7 +14,7 @@ export const RegistrationModal = ({ isOpen, onClose }: ModalProps) => {
                 <form>
                     <StyledInput type="text" placeholder="Seu nome" />
                     <StyledInput type="email" placeholder="Seu email" />
-                    <StyledPhoneInput mask="(99) 99999-9999" maskChar="_" type="tel" placeholder="(99) 99999-9999" />
+                    <StyledPhoneInput mask="(99) 99999-9999" maskChar="_" type="tel" placeholder="Seu número de celular" />
                     <StyledButton>Enviar</StyledButton>
                 </form>
                 <StyledCancelButton onClick={onClose}>voltar</StyledCancelButton>
